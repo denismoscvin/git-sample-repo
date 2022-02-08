@@ -8,7 +8,7 @@ git branch <branch-name>  - Branches are highly important in the git world. By u
 git push -u <remote> <branch-name>  - This command will create a branch locally. To push the new branch into the remote repository, you 
 		need to use the following command.
 
-git branch or git branch --list  - vizualizarea branchurilor
+git branch or git branch --list  - vizualizarea branch
 
 git branch -d <branch-name>  - stergereea unui branch
 
