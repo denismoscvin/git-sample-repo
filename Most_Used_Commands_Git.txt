@@ -1,0 +1,37 @@
+git clone <https://name-of-the-repository-link>  - Git clone is a command for downloading existing source code from a remote repository 
+		(like Github, for example). In other words, Git clone basically makes an identical copy of the latest version of a 
+		project in a repository and saves it to your computer.
+
+git branch <branch-name>  - Branches are highly important in the git world. By using branches, several developers are able to work in 
+		parallel on the same project simultaneously. We can use the git branch command for creating, listing and deleting branches.
+
+git push -u <remote> <branch-name>  - This command will create a branch locally. To push the new branch into the remote repository, you 
+		need to use the following command.
+
+git branch or git branch --list  - vizualizarea branchurilor
+
+git branch -d <branch-name>  - stergereea unui branch
+
+
+git checkout <name-of-your-branch>  - This is also one of the most used Git commands. To work in a branch, first you need to switch to 
+		it. We use git checkout mostly for switching from one branch to another. We can also use it for checking out files and commits.
+
+git status  - toata informatia despre acest branch
+
+git add <file> - adaug un fisier
+git commit -m "commit message"  - mesaj pentru careva adaugare in branch sau modificare
+
+git push <remote> <branch-name>  - After committing your changes, the next thing you want to do is send your changes to the remote server. Git 
+		push uploads your commits to the remote repository.
+
+git pull <remote>  - The git pull command is used to get updates from the remote repo. This command is a combination of git fetch and git 
+		merge which means that, when we use git pull, it gets the updates from remote repository (git fetch) and immediately applies 
+		the latest changes in your local (git merge).
+
+git revert 3321844  - Sometimes we need to undo the changes that we've made. There are various ways to undo our changes locally or remotely 
+		(depends on what we need), but we must carefully use these commands to avoid unwanted deletions.
+		A safer way that we can undo our commits is by using git revert. To see our commit history, first we need to use git log -- oneline:
+
+git checkout dev  - When you've completed development in your branch and everything works fine, the final step is merging the branch with the 
+		parent branch (dev or master). This is done with the git merge command.
+
